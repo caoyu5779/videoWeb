@@ -18,8 +18,6 @@ func main()  {
 	//每个goroutine 只有4k大小？
 	r := RegisterHandlers()
 	http.ListenAndServe(":8111", r)
-
-
 }
 
 //handler->validation{1: request , 2. user} -> business logic -> response
